@@ -2,7 +2,7 @@
 
 include 'connect.php';
 
-if(isset($_POST['signUp'])){
+if(isset($_POST['Login'])){
     $userName=$_POST['userName'];
     $email=$_POST['email'];
     $password=$_POST['password'];
@@ -27,7 +27,7 @@ if(isset($_POST['signUp'])){
 
 }
 
-if(isset($_POST['signIn'])){
+if(isset($_POST['Register'])){
    $email=$_POST['email'];
    $password=$_POST['password'];
    $password=md5($password) ;

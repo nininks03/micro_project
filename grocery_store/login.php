@@ -34,7 +34,7 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" action="register.php">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>&nbsp;&nbsp;
@@ -60,7 +60,7 @@
                 <div class="pass">Forget Password?</div>
                 <input name="submit" type="Submit" value="Login">
                 <div class="signup_link">
-                    Not a Member ? <a href="registration.html">Register</a>
+                    Not a Member ? <a href="registration.php">Register</a>
                 </div>
             </form>
         </div>

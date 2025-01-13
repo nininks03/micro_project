@@ -46,7 +46,7 @@
       <div class="container">
         <div class="center">
             <h1>Register</h1>
-            <form action="" method="POST">
+            <form action="register.php" method="POST">
                 <div class="txt_field">
                     <input type="text" name="text" required>
                     <span></span>
@@ -64,7 +64,7 @@
                 </div>
                 <input name="submit" type="Submit" value="Register">
                 <div class="signup_link">
-                    Already Registered ? <a href="login.html">Login</a>
+                    Already Registered ? <a href="login.php">Login</a>
                 </div>
             </form>
         </div>
