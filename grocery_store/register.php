@@ -2,8 +2,9 @@
 
 include 'connect.php';
 
-if(isset($_POST['Login'])){
+if(isset($_POST['Register'])){
     $userName=$_POST['userName'];
+    $phNo=$_POST['phNo'];
     $email=$_POST['email'];
     $password=$_POST['password'];
     $password=md5($password);
@@ -14,10 +15,10 @@ if(isset($_POST['Login'])){
         echo "Email Address Already Exists !";
      }
      else{
-        $insertQuery="INSERT INTO login(Username,email,Password)
+        $insertQuery="INSERT INTO login(Username,phNo,email,password)
                        VALUES ('$userName','$phNo','$email','$password')";
             if($conn->query($insertQuery)==TRUE){
-                header("location: index.php");
+                header("location: login.php");
             }
             else{
                 echo "Error:".$conn->error;
@@ -27,7 +28,7 @@ if(isset($_POST['Login'])){
 
 }
 
-if(isset($_POST['Register'])){
+if(isset($_POST['Login'])){
    $email=$_POST['email'];
    $password=$_POST['password'];
    $password=md5($password) ;
@@ -38,7 +39,7 @@ if(isset($_POST['Register'])){
     session_start();
     $row=$result->fetch_assoc();
     $_SESSION['email']=$row['email'];
-    header("Location: home.php");
+    header("Location: loginHome.php");
     exit();
    }
    else{
