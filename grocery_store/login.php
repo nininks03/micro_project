@@ -46,11 +46,11 @@
       <div class="container">
         <div class="center">
             <h1>Login</h1>
-            <form action="" method="POST">
+            <form action="register.php" method="POST">
                 <div class="txt_field">
-                    <input type="text" name="text" required>
+                    <input type="text" name="email" required>
                     <span></span>
-                    <label>Username</label>
+                    <label>Email</label>
                 </div>
                 <div class="txt_field">
                     <input type="password" name="password" required>
@@ -58,7 +58,7 @@
                     <label>Password</label>
                 </div>
                 <div class="pass">Forget Password?</div>
-                <input name="submit" type="Submit" value="Login">
+                <input name="Login" type="submit" value="Login">
                 <div class="signup_link">
                     Not a Member ? <a href="registration.php">Register</a>
                 </div>

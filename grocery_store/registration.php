@@ -48,12 +48,17 @@
             <h1>Register</h1>
             <form action="register.php" method="POST">
                 <div class="txt_field">
-                    <input type="text" name="text" required>
+                    <input type="text" name="userName" required>
                     <span></span>
                     <label>Username</label>
                 </div>
                 <div class="txt_field">
-                  <input type="text" name="Email" required>
+                  <input type="text" name="phNo" required>
+                  <span></span>
+                  <label>Phone Number</label>
+                </div>
+                <div class="txt_field">
+                  <input type="text" name="email" required>
                   <span></span>
                   <label>Email</label>
               </div>
@@ -62,7 +67,7 @@
                     <span></span>
                     <label>Password</label>
                 </div>
-                <input name="submit" type="Submit" value="Register">
+                <input name="Register" type="submit" value="Register">
                 <div class="signup_link">
                     Already Registered ? <a href="login.php">Login</a>
                 </div>
